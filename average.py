@@ -6,8 +6,9 @@
 #     c=input('What is your grade?  ')
     
     
+# lst=int(input("Enter your grades"))
 
-# x=[44, 67, 85,0]
+# x=[]
 
 # sum=0
 
@@ -18,21 +19,36 @@
 
 
 
-# input size of the list
-n = int(input("Enter the number of grades : "))
-# store integers in a list using map, split and strip functions
-lst = list(map(int, input(
-    "Enter your grades(Space-Separated): ").strip().split()))[:n]
-print('The list is:', lst)   # printing the list
+# # input size of the list
+# n = int(input("Enter the number of grades : "))
+# # store integers in a list using map, split and strip functions
+# x = list(map(int, input(
+#     "Enter your grades(Space-Separated): ").strip().split()))[:n]
+# print('The list is:', x)   # printing the list
 
  
  
-lst=[n]
+# lst=[x]
 
-sum=0
+# sum=0
 
-for grade in lst:
-    sum=sum+grade
+# for grade in lst:
+#     sum=sum+grade
 
-print(sum/len(lst))
+# print(sum/len(x))
 
+
+
+
+input_string = input('Enter grades separated by space ')
+print("\n")
+# Take input numbers into list
+numbers = input_string.split()
+
+# convert each item to int type
+for i in range(len(numbers)):
+    # convert each item to int type
+    numbers[i] = int(numbers[i])
+
+# Calculating the sum and average
+print("Average = ", sum(numbers) / len(numbers))
