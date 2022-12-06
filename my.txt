@@ -1,0 +1,6 @@
+/usr/local/bin/python3 /Users/eternalcyberunity/Unit4Python/todo.py
+dog
+cat
+tiger
+raw
+cee
