@@ -18,3 +18,25 @@ print(kevaughn.age)
 print(anna.age)
 kevaughn.hello()
 kevaughn.hi()
+
+
+class Teacher(Person):
+    role='teacher'
+
+    def hi(self):
+        print('Hi my name is Mx. '+self.name)
+
+forlenza=Teacher('Forlenza', 184)
+print(forlenza.role)
+
+forlenza.hi()
+
+class Student(Person):
+    role='student'
+
+
+
+kevaughn=Student('Kevaughn', 89)
+print(kevaughn.role)
+
+kevaughn.hi()
